@@ -43,15 +43,16 @@ function DonationForm({ onDonate, loading }) {
   };
 
   return (
-    <div className="donation-form-container" style={{background: '#fefbd8', borderRadius: '16px', padding: '10px', flex: 1}}>
-      <h2 style={{fontWeight: '600', marginBottom: '10px'}}>Make a Donation</h2>
+    <div className="donation-form-container" style={{background: '#fefbd8', borderRadius: '16px', padding: '10px', flex: 1, border: '3px solid black', height:'100%'}}>
+      <h2 style={{fontWeight: '600', marginBottom: '10px', fontSize:'2rem'}}>Make a Donation</h2>
       <form onSubmit={handleSubmit} className="donation-form">
         <div className="form-group" style={{display: 'flex', flexDirection: 'row', gap: 10}}>
           <label htmlFor="name">Your Name</label>
           <input
-            style={{background: '#fff'}}
+            style={{background: '#fff', border:'2px solid black', padding:'0.5rem'}}
             type="text"
             id="name"
+            placeholder='Name'
             value={name}
             onChange={(e) => setName(e.target.value)}
             disabled={loading}
@@ -62,11 +63,12 @@ function DonationForm({ onDonate, loading }) {
         <div className="form-group" style={{display: 'flex', flexDirection: 'column', gap: 10}}>
           <label htmlFor="message">Message</label>
           <textarea
-            style={{background: '#fff'}}
+            style={{background: '#fff', border:'2px solid black', padding:'0.5rem'}}
             id="message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             rows="3"
+            placeholder='Enter your message'
             disabled={loading}
           ></textarea>
           {errors.message && <span className="error">{errors.message}</span>}
@@ -75,10 +77,11 @@ function DonationForm({ onDonate, loading }) {
         <div className="form-group" style={{display: 'flex', flexDirection: 'column', gap: 10}}>
           <label htmlFor="amount">Amount (ICP)</label>
           <input
-            style={{background: '#fff'}}
+            style={{background: '#fff', border:'2px solid black', padding:'0.5rem'}}
             type="number"
             id="amount"
             value={amount}
+            placeholder='Donation Amount'
             onChange={(e) => setAmount(e.target.value)}
             min="0"
             step="1"
@@ -90,7 +93,7 @@ function DonationForm({ onDonate, loading }) {
           <button 
             type="submit" 
             className="donate-button"
-            style={{border: '#000 2px solid', padding: '.1em', marginTop: '10px', cursor: 'pointer'}}
+            style={{border: '#000 2px solid', marginTop: '10px', cursor: 'pointer', border: '2px solid black',borderRadius:'5px', padding:'0.2rem', backgroundColor:'lightgrey'}}
             disabled={loading}
           >
             {loading ? 'Processing...' : 'Donate Now'}

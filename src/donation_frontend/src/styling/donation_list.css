@@ -1,6 +1,8 @@
 .donation-table-container {
     width: 100%;
-    overflow-x: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: 2px solid black;
   }
   
   .donation-table {
@@ -27,4 +29,4 @@
   .donation-table tr:hover {
     background-color: #ddd;
   }
-  
+ 

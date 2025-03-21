@@ -3,11 +3,11 @@ import "../styling/header.css";
 
 function Header() {
   return (
-    <header style={{background: '#d5f4e6', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+    <header style={{background: '#d5f4e6', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
       <div className="container" style={styles.container}>
         <div className="header-content" style={styles.headerContent}>
           <div className="logo">
-            <h1 style={{fontWeight: 'bolder'}}>DonorTrust</h1>
+            <h1 style={{fontWeight: 'bolder', fontSize:'1.5rem'}}>DonorTrust</h1>
           </div>
           <nav>
             <ul style={{"display" : 'flex', "flexDirection" : 'row', gap: 20}}>

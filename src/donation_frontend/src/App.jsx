@@ -73,7 +73,7 @@ function App() {
   return (
     <div className="app-container" style={styles.app_container}>
       <Header />
-      <main style={{display: 'flex', justifyContent: 'center', flexGrow: 1, alignItems: 'center', marginTop: '100px'}}>
+      <main style={{display: 'flex', justifyContent: 'center', flexGrow: 1, alignItems: 'center', marginTop: '50px'}}>
         <div className="container" style={{display: 'flex', padding: '10px 40px'}}>
           <div className="app-wrapper" style={{display: 'flex', gap: 20, 'flexDirection' : 'row', justifyContent: 'space-evenly', width: '100%'}}>
             <Stats 
@@ -100,7 +100,8 @@ function App() {
 const styles = {
   app_container : {
     "display" : 'flex',
-    "flex-direction" : 'column'
+    "flex-direction" : 'column',
+    "padding-bottom" : '4rem'
   }
 }
 

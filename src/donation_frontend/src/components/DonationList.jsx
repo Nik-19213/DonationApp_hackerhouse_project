@@ -16,15 +16,15 @@ function DonationList({ donations, loading }) {
   if (loading) {
     return (
       <div className="donation-list-container">
-        <h2>Recent Donations</h2>
+        <h2 style={{fontWeight:'bold'}}>Recent Donations</h2>
         <div className="loading">Loading donations...</div>
       </div>
     );
   }
 
   return (
-    <div className="donation-list-container" style={{background: '#fefbd8', borderRadius: '16px', padding: '10px', flex: 1}}>
-      <h2 style={{fontWeight: '600'}}>Recent Donations</h2>
+    <div className="donation-list-container" style={{background: '#fefbd8', borderRadius: '16px', padding: '10px', flex: 1, maxHeight: '68vh', overflow: 'scroll', scrollbarWidth: 'none', border: '3px solid black'}}>
+      <h2 style={{fontWeight: '600', fontSize:'2rem'}}>Recent Donations</h2>
       
       {donations.length === 0 ? (
         <div className="no-donations">
