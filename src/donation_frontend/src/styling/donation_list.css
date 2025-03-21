@@ -1,0 +1,30 @@
+.donation-table-container {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  .donation-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .donation-table th, .donation-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .donation-table th {
+    background-color: #a6a6a6;
+    color: white;
+  }
+  
+  .donation-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .donation-table tr:hover {
+    background-color: #ddd;
+  }
+  
