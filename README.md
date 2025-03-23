@@ -2,6 +2,9 @@
 
 ![front_end_page](https://github.com/user-attachments/assets/18f67875-a64a-4c39-884f-f1932e84c1f7)
 
+[Visit My Canister](https://wgp4b-xyaaa-aaaai-q3vxq-cai.icp0.io/)
+
+
 DonorTrust is a decentralized donation application powered by ICP blockchain to ensure transparency, security, and trust in charitable contributions. This platform enables donors to send funds directly to beneficiaries without intermediaries, reducing fraud and ensuring that every donation reaches its intended cause. Using smart contract and canisters, we guarantee immutable transaction records, making the donation process verifiable and tamper-proof. Our goal is to revolutionize the way donations are made, fostering a more accountable and efficient ecosystem for NGOs, charities, and social causes. 
 
 To get started, you might want to explore the project directory structure and the default configuration file. Working with this project in your development environment will not affect any production deployment or identity tokens.
